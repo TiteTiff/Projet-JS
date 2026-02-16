@@ -17,11 +17,14 @@
     <div class="titre">
         <h1> Bienvenue sur le site qui vous parle de pole dance</h1>
     </div>
-    <ul class="navbar">
-        <li><a class="accueil" href="accueil">Accueil</a></li>
-        <li><a class="histoire" href="histoire">Histoire de la pole dance</a></li>
-        <li><a class="galerie" href="galerie">Galerie</a></li>
-    </ul>
+    <div class="dropdown">
+        <button onclick="showmenu()" id= "mydropdown" class="dropbutton">Menu</button>
+        <div id="dropcontent" class="dropcontent">
+         <a href="accueil"> Accueil</a>
+         <a href="histoire">Histoire de la pole dance</a>
+         <a href="galerie">Galerie</a>
+        </div>
+    </div>
     <img src="pole1.jpg" id="pole1">
 </header>
 <main>

@@ -80,3 +80,21 @@ async function displayArticles() {
 displayArticles();
 
 let container = document.getElementById('container');
+
+//menu dropdown
+function showmenu () {
+    document.getElementById('dropcontent').classList.toggle('show');
+}
+
+window.onclick=function(event){
+    if (!event.target.matches("dropbutton")) {
+        let dropdowns=document.getElementByClassName("dropcontent");
+        let i;
+        for (i=0; i<dropdowns.length; i++) {
+            let openDropdown=dropdowns[i];
+            if(openDropdown.classList.contains('show')){
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
