@@ -1,0 +1,51 @@
+   @media (min-width: 375px) {
+       #pole1 {
+           max-inline-size: 100%;
+           block-size: auto;
+       }
+
+       .navbar {
+           display: flex;
+           ;
+           flex-direction: column;
+       }
+   }
+
+   h1 {
+       display: flex;
+       justify-items: center;
+       justify-content: space-around;
+       color: #830a0a;
+       font-size: xx-large;
+       text-justify: center;
+   }
+
+   .navbar {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       background-color: #f2f2f2;
+       padding: 10px;
+
+   }
+
+   #pole1 {
+       width: auto;
+       height: auto;
+       margin: auto;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       border-radius: 10%;
+   }
+
+   .feed-container {
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       padding: 10px;
+   }
+
+   .produit {
+       background-color: #db9898;
+   }
