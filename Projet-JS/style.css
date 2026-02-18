@@ -70,4 +70,13 @@
        .produit {
            background-color: #db9898;
        }
+
+       .swap {
+           display: flex;
+           flex-direction: row;
+       }
+
+       .photos {
+           display: none;
+       }
    }

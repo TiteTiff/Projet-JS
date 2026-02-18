@@ -118,3 +118,24 @@ function myFormulaire() {
     document.body.appendChild(myNewEl);
     return myNewEl;
 };
+
+function affichage() {
+    document.getElementById('images').classList.toggle('swap');
+}
+
+function ajouter(){
+    const ajout=document.querySelector('#ajout');
+    const valider=document.querySelector('#valider');
+
+    let ajouter=prompt("Entrez l'URL d'une image à ajouter");
+    if(ajouter===null){
+        valider.innerText="Réessayez plus tard";
+    }
+    else {
+        let image=document.createElement("img")
+        //image=document.getElementById("valider").value;
+        image.setAttribute("src", ajouter);
+        document.getElementById("images").appendChild(image);
+    }
+}
+
